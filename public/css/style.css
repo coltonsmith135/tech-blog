@@ -1,0 +1,26 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, rgb(2, 185, 185), rgb(248, 148, 248));
+    color: rgb(247, 246, 246);
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height:  100vh;
+}
+
+header {
+    background-color: grey;
+    padding: 25px;
+}
+
+.tech {
+border: black 20px;
+box-shadow: 10px 10px 10px black;
+}
+
+.button {
+    background-color: grey;
+}
