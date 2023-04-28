@@ -1,5 +1,8 @@
+console.log("login file coinnected")
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
+  console.log("login form clicked")
 
   const username = document.querySelector("#username-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
@@ -21,6 +24,7 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
+  console.log("signup form clicked")
 
   const username = document.querySelector("#username-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();

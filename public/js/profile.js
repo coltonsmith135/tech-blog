@@ -1,13 +1,15 @@
 const newFormHandler = async (event) => {
     event.preventDefault()
 
-    const name = document.querySelector('#post-title').value.trim()
-    const description = document.querySelector('#post-desc').value.trim()
+    const title = document.querySelector('#project-name').value
+    const description = document.querySelector('#project-desc').value
 
-    if( name && description ) {
+
+
+    if( title && description ) {
         const response = await fetch('/api/posts', {
             method: 'POST',
-            body: JSON.stringify({ name, description }),
+            body: JSON.stringify({ title, description }),
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -21,7 +23,7 @@ const newFormHandler = async (event) => {
     }
 }
 
-const delButtonHandler = async (event) {
+const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
         const id = event.target.getAttribute('data-id')
 

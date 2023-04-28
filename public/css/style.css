@@ -24,13 +24,25 @@ padding: 10px;
 }
 
 .signup-form {
-    background-color: red;
+    border-color: aliceblue;
+    border: solid 5px;
     margin: 50px;
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items:center;
-    max-width: 75%;
+    width: 50%;
+}
+
+.login-form {
+    border-color: aliceblue;
+    border: solid 5px;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
 }
 
 .new-post-form {
@@ -59,4 +71,15 @@ padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project {
+    border-color: aliceblue;
+    border: solid 5px;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-width: 50%;
 }

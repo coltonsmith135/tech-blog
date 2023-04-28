@@ -2,11 +2,11 @@
     {
         "title": "video games",
         "description": "apex!",
-        "user_id": "1"
+        "user_id": 1
     },
     {
         "title": "harry potter",
         "description": "wizards!!",
-        "user_id": "2"
+        "user_id": 2
     }
 ]

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User, Posts } = require("../models");
+const { User, Posts }  = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
@@ -37,7 +37,7 @@ router.get("posts/:id", async (req, res) => {
 
     const posts = postsData.get({ plain: true });
 
-    res.render("project", {
+    res.render("/posts", {
       ...posts,
       logged_in: req.session.logged_in,
     });
@@ -46,12 +46,20 @@ router.get("posts/:id", async (req, res) => {
   }
 });
 
+
+
 router.get("/profile", withAuth, async (req, res) => {
+
+  console.log("This is req.session" ,req.session)
+
   try {
-    const userData = await User.findByPk(req.session.user_id, {
+    console.log("Session ID User: ", req.session.userId)
+
+    const userData = await User.findByPk(req.session.userId, {
       attributes: { exclude: ["password"] },
       include: [{ model: Posts }],
     });
+    console.log("This is userData!", userData)
 
     const user = userData.get({ plain: true });
 
@@ -60,6 +68,7 @@ router.get("/profile", withAuth, async (req, res) => {
       logged_in: true,
     });
   } catch (err) {
+    console.log("ERROR: ", err)
     res.status(500).json(err);
   }
 });
