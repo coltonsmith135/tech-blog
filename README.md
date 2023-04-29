@@ -42,3 +42,10 @@ Colton Smith
 through localhost
 
 
+https://teckblogg.herokuapp.com/
+
+![login](./utils/images/techblog3.png)
+
+![myposts](./utils/images/techblog2.png)
+
+![profile](./utils/images/techblog1.png)
