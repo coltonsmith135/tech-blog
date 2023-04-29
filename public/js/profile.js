@@ -16,8 +16,10 @@ const newFormHandler = async (event) => {
         })
 
         if(response.ok) {
+            console.log("RESONSE: ", response)
             document.location.replace('/profile')
         } else {
+            console.log(alert)
             alert('Failed to create post')
         }
     }
@@ -41,8 +43,8 @@ const delButtonHandler = async (event) => {
 
 document
   .querySelector('.new-post-form')
-  .addEventListener('click', newFormHandler)
+  .addEventListener('submit', newFormHandler)
 
-document
-  .querySelector('.posts-list') 
-  .addEventListener('click', delButtonHandler) 
+// document
+//   .querySelector('.posts-list') 
+//   .addEventListener('submit', delButtonHandler) 

@@ -1,12 +1,12 @@
 [
     {
-        "title": "video games",
-        "description": "apex!",
-        "user_id": 1
+        "title": "handle bars!",
+        "description": "Learning handlebars can be frustrating but as long as you stick with it you will be able to learn it in no time!",
+        "userId": 1
     },
     {
-        "title": "harry potter",
-        "description": "wizards!!",
-        "user_id": 2
+        "title": "JavaScript",
+        "description": "JavaScript is a great language to learn because it ties into so many different languages and is widely used.",
+        "userId": 2
     }
 ]

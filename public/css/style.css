@@ -5,14 +5,14 @@
 }
 
 body {
-    background-image: linear-gradient(120deg, rgb(0, 3, 3), rgb(95, 95, 95));
-    color: rgb(247, 246, 246);
+    background-image: linear-gradient(120deg, rgb(162, 255, 255), rgb(243, 143, 143));
+    color: rgb(0, 0, 0);
     font-family: sans-serif;
     min-height:  100vh;
 }
 
 header {
-    background-image: linear-gradient(120deg, rgb(0, 3, 3), rgb(95, 95, 95));
+    background-image: linear-gradient(120deg, rgb(162, 255, 255), rgb(243, 143, 143));
     padding: 25px;
 }
 
@@ -24,34 +24,29 @@ padding: 10px;
 }
 
 .signup-form {
-    border-color: aliceblue;
-    border: solid 5px;
     margin: 50px;
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 50%;
 }
 
 .login-form {
-    border-color: aliceblue;
-    border: solid 5px;
     margin: 50px;
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 50%;
 }
 
 .new-post-form {
-    background-color: blue;
+    background-color: rgb(252, 170, 170);
     margin: 10px;
     padding: 50px;
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    display: inline-block;
-    margin-left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mb-2 {
@@ -71,11 +66,13 @@ padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px;
+    width: 300px;
+    height: 30px;
+    border-radius: 100px;
 }
 
 .project {
-    border-color: aliceblue;
-    border: solid 5px;
     margin: 50px;
     padding: 50px;
     display: flex;
@@ -83,3 +80,36 @@ padding: 10px;
     align-items:center;
     min-width: 50%;
 }
+
+p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.created {
+    margin-top: 45px;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(247, 135, 135);
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
